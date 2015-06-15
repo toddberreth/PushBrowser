@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>53D18AD3-82E1-4982-9720-B6AE4BEF4F51</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PushBrowser</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C3EE3DB3C1F2C7E7EA525DDE7204F4CD13BB94CE</key>
+		<string>https://github.com/toddberreth/PushBrowser.git</string>
+		<key>F3EDE78E54CFD700064972770C3E610430FCD9D9</key>
+		<string>https://github.com/toddberreth/ofxAwesomium.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PushBrowser.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C3EE3DB3C1F2C7E7EA525DDE7204F4CD13BB94CE</key>
+		<string>../..</string>
+		<key>F3EDE78E54CFD700064972770C3E610430FCD9D9</key>
+		<string>../../../addons/ofxAwesomium</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/toddberreth/PushBrowser.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C3EE3DB3C1F2C7E7EA525DDE7204F4CD13BB94CE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F3EDE78E54CFD700064972770C3E610430FCD9D9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxAwesomium</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C3EE3DB3C1F2C7E7EA525DDE7204F4CD13BB94CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PushBrowser</string>
+		</dict>
+	</array>
+</dict>
+</plist>

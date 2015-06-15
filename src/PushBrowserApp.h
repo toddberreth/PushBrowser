@@ -1,10 +1,19 @@
 #pragma once
 
 #include "ofMain.h"
+#include "defines.h"
+#include "ofxXmlSettings.h"
+#include "ofxAwesomium.h"
+#include "ofxOsc.h"
+
+
 
 class pushBrowserApp : public ofBaseApp{
 
 	public:
+    
+        void loadSettings();
+    
 		void setup();
 		void update();
 		void draw();
@@ -20,5 +29,16 @@ class pushBrowserApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+    
+		ofxAwesomium    browser;
+    
+        int             windowWidth, windowHeight, origWindowWidth, origWindowHeight;
+        bool            bFullScreen, bBrowserLoaded;
+    
+        string          currentURL, defaultURL , pushURL;
+        bool            bUpdateURL;
+    
+        int             oscReceivePort;
+    
+        ofxOscReceiver  URLReceiver;
 };
