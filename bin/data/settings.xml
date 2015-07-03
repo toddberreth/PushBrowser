@@ -1,14 +1,15 @@
+<!--PushBrowser configuration file-->
 <SETTINGS>
 	<WINDOW> 
-		<WIDTH>1280</WIDTH>
-		<HEIGHT>720</HEIGHT>
-		<FULLSCREEN>TRUE</FULLSCREEN>
-		<HIDE_CURSOR>FALSE</HIDE_CURSOR>
+		<WIDTH>1280</WIDTH> <!-- in pixels -->
+		<HEIGHT>800</HEIGHT>    <!-- in pixels -->
+		<FULLSCREEN>FALSE</FULLSCREEN> <!-- TRUE or FALSE -->
+		<HIDE_CURSOR>FALSE</HIDE_CURSOR> <!-- TRUE or FALSE -->
 	</WINDOW>
-	<DEFAULT_URL>http://www.google.com</DEFAULT_URL>
+    <DEFAULT_URL>http://google.com</DEFAULT_URL>
 	<QR_CONTROL>
-		<QR_ON>TRUE</QR_ON>
-		<DEFAULT_QR_URL>http://www.google.com</DEFAULT_QR_URL>
+		<QR_ON>TRUE</QR_ON> <!-- TRUE or FALSE -->
+		<DEFAULT_QR_URL>http://google.com</DEFAULT_QR_URL>
 		<QR_SIDE>LEFT</QR_SIDE> 	<!--  LEFT, RIGHT, BOTH -->
 		<QR_HEIGHT>BOTTOM</QR_HEIGHT> 	<!--  TOP, MIDDLE, BOTTOM -->
 		<QR_SIZE>96</QR_SIZE>		<!-- in pixels -->

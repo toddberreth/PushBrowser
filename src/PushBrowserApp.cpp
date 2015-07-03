@@ -8,7 +8,7 @@ void pushBrowserApp::setup(){
     ofSetVerticalSync(VERTICAL_SYNC);
     ofSetLogLevel(LOG_LEVEL);
 	
-    bFullScreen = bUpdateURL = bQRControl = bBrowserLoaded = bUpdateQRCode = false;
+    bFullScreen = bUpdateURL = bQRControl = bBrowserLoaded = bUpdateQRCode = bHideCursor = false;
     currentURL = defaultURL = pushURL = QRCurrentURL = QRDefaultURL = QRPushURL = "";
     
     loadSettings();
@@ -17,6 +17,8 @@ void pushBrowserApp::setup(){
     else {ofSetWindowShape(windowWidth, windowHeight); ofSetWindowPosition(30, 50);}
     
     URLReceiver.setup(oscReceivePort);
+    
+    ofHideCursor();
 }
 
 //--------------------------------------------------------------
@@ -100,7 +102,11 @@ void pushBrowserApp::keyPressed(int key){ browser.keyPressed(key);}
 //--------------------------------------------------------------
 void pushBrowserApp::keyReleased(int key){ browser.keyReleased(key);}
 //--------------------------------------------------------------
-void pushBrowserApp::mouseMoved(int x, int y ){ browser.mouseMoved(x, y);}
+void pushBrowserApp::mouseMoved(int x, int y ){
+    
+    if (bHideCursor) ofHideCursor(); else ofShowCursor();
+    browser.mouseMoved(x, y);
+}
 //--------------------------------------------------------------
 void pushBrowserApp::mouseDragged(int x, int y, int button){ browser.mouseDragged(x, y, button);}
 //--------------------------------------------------------------
@@ -127,7 +133,7 @@ void pushBrowserApp::loadSettings(){
     string _bFullScreen = ofToLower(settings.getValue("SETTINGS:WINDOW:FULLSCREEN", DEFAULT_FULLSCREEN));
     if (_bFullScreen == "true") bFullScreen = true; else bFullScreen = false;
 	string _bHideCursor = ofToLower(settings.getValue("SETTINGS:WINDOW:HIDE_CURSOR", DEFAULT_HIDE_CURSOR));
-    if (_bHideCursor == "true") ofHideCursor(); else ofShowCursor();
+    if (_bHideCursor == "true") bHideCursor = true; else bHideCursor = false;
     
 	currentURL = defaultURL = settings.getValue("SETTINGS:DEFAULT_URL", DEFAULT_URL);
 	

@@ -36,7 +36,7 @@ class pushBrowserApp : public ofBaseApp{
 		ofxAwesomium    browser;
     
         int             windowWidth, windowHeight, origWindowWidth, origWindowHeight;
-        bool            bFullScreen, bBrowserLoaded;
+        bool            bFullScreen, bBrowserLoaded, bHideCursor;
     
         string          currentURL, defaultURL , pushURL;
         bool            bUpdateURL;
