@@ -152,6 +152,6 @@ void pushBrowserApp::loadSettings(){
 
 void pushBrowserApp::loadQRCode(string url, int size){
 
-	QRControlCode = QRCodeGenerator.generate(url, size);
+	QRControlCode = QRCodeGenerator.generate(url, size, true, false);
 	QRControlCode.setAnchorPercent(0.5, 0.5);
 }
