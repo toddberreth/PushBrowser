@@ -702,8 +702,8 @@
 					../../../addons/ofxQRCodeGenerator/src,
 					../../../addons/ofxQRCodeGenerator/include,
 				);
-				ICON = "$(ICON_NAME_DEBUG)";
-				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				ICON = icon.icns;
+				ICON_FILE = icon.icns;
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -746,8 +746,8 @@
 					../../../addons/ofxQRCodeGenerator/src,
 					../../../addons/ofxQRCodeGenerator/include,
 				);
-				ICON = "$(ICON_NAME_RELEASE)";
-				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				ICON = icon.icns;
+				ICON_FILE = icon.icns;
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
