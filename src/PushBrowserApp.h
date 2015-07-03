@@ -3,16 +3,19 @@
 #include "ofMain.h"
 #include "defines.h"
 #include "ofxXmlSettings.h"
-#include "ofxAwesomium.h"
 #include "ofxOsc.h"
+#include "ofxQRCodeGenerator.h"
+#include "ofxAwesomium.h"
 
-
+enum QRSide { QR_LEFT, QR_RIGHT, QR_BOTH };
+enum QRHeight { QR_TOP, QR_MIDDLE, QR_BOTTOM };
 
 class pushBrowserApp : public ofBaseApp{
 
 	public:
     
         void loadSettings();
+		void loadQRCode(string URL, int size);
     
 		void setup();
 		void update();
@@ -41,4 +44,12 @@ class pushBrowserApp : public ofBaseApp{
         int             oscReceivePort;
     
         ofxOscReceiver  URLReceiver;
+
+		ofxQRCodeGenerator	QRCodeGenerator;
+		bool				bQRControl, bUpdateQRCode;
+		string				QRCurrentURL, QRDefaultURL, QRPushURL;
+		ofImage				QRControlCode;
+		QRSide				QRCurrentSide;
+		QRHeight			QRCurrentHeight;
+		int					QRCurrentSize, QRCurrentMargin;
 };

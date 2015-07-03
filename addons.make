@@ -1,4 +1,4 @@
-ofxGui
 ofxOsc
 ofxXmlSettings
 ofxAwesomium
+ofxQRCodeGenerator
