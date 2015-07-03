@@ -54,7 +54,8 @@ void pushBrowserApp::update(){
         
         windowWidth = ofGetWindowWidth(); windowHeight = ofGetWindowHeight();
         browser.setup(windowWidth, windowHeight);
-        browser.loadURL(currentURL);
+        browser.update();
+        //browser.loadURL(currentURL);
     }
 }
 
