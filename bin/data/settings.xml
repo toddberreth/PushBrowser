@@ -1,17 +1,17 @@
 <!--PushBrowser configuration file-->
 <SETTINGS>
 	<WINDOW> 
-		<WIDTH>1280</WIDTH> <!-- in pixels -->
-		<HEIGHT>800</HEIGHT>    <!-- in pixels -->
+		<WIDTH>1920</WIDTH> <!-- in pixels -->
+		<HEIGHT>540</HEIGHT>    <!-- in pixels -->
 		<FULLSCREEN>FALSE</FULLSCREEN> <!-- TRUE or FALSE -->
 		<HIDE_CURSOR>FALSE</HIDE_CURSOR> <!-- TRUE or FALSE -->
 	</WINDOW>
-    <DEFAULT_URL>http://google.com</DEFAULT_URL>
+    <DEFAULT_URL>http://152.3.61.211:12346/slideshow/mediawall.html</DEFAULT_URL>
 	<QR_CONTROL>
 		<QR_ON>TRUE</QR_ON> <!-- TRUE or FALSE -->
-		<DEFAULT_QR_URL>http://google.com</DEFAULT_QR_URL>
-		<QR_SIDE>LEFT</QR_SIDE> 	<!--  LEFT, RIGHT, BOTH -->
-		<QR_HEIGHT>BOTTOM</QR_HEIGHT> 	<!--  TOP, MIDDLE, BOTTOM -->
+		<DEFAULT_QR_URL>http://152.3.61.211:12346/slideshow/remoteclient.html</DEFAULT_QR_URL>
+		<QR_SIDE>BOTH</QR_SIDE> 	<!--  LEFT, RIGHT, BOTH -->
+		<QR_HEIGHT>MIDDLE</QR_HEIGHT> 	<!--  TOP, MIDDLE, BOTTOM -->
 		<QR_SIZE>96</QR_SIZE>		<!-- in pixels -->
 		<QR_MARGIN>32</QR_MARGIN>	<!-- between side of screen and qr code, in pixels -->
 	<QR_CONTROL>

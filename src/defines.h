@@ -8,8 +8,8 @@
  * http://www.opensource.org/licenses/MIT
  */
 
-#define		FRAME_RATE                  60
-#define		VERTICAL_SYNC               TRUE
+#define		FRAME_RATE                  30
+#define		VERTICAL_SYNC               FALSE
 #define		DEFAULT_FULLSCREEN          "false"
 #define		DEFAULT_HIDE_CURSOR         "false"
 
