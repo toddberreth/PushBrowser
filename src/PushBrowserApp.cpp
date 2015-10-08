@@ -90,9 +90,18 @@ void pushBrowserApp::draw(){
 			else if (QRCurrentHeight == QR_BOTTOM) ofTranslate(0,ofGetWindowHeight()-(QRCurrentSize/2)-QRCurrentMargin,0); 
 			else  ofTranslate(0,ofGetWindowHeight()/2,0);
 
-			if ((QRCurrentSide == QR_LEFT) || (QRCurrentSide == QR_BOTH)) QRControlCode.draw((QRCurrentSize/2) + QRCurrentMargin,0);
-			if ((QRCurrentSide == QR_RIGHT) || (QRCurrentSide == QR_BOTH)) QRControlCode.draw(ofGetWindowWidth()-(QRCurrentSize/2)-QRCurrentMargin,0);
-
+            if ((QRCurrentSide == QR_LEFT) || (QRCurrentSide == QR_BOTH)){
+                ofSetRectMode(OF_RECTMODE_CENTER);
+                ofRect((QRCurrentSize/2) + QRCurrentMargin, 0, QRCurrentSize + 10, QRCurrentSize + 10);
+                ofSetRectMode(OF_RECTMODE_CORNER);
+                QRControlCode.draw((QRCurrentSize/2) + QRCurrentMargin,0);
+            }
+            if ((QRCurrentSide == QR_RIGHT) || (QRCurrentSide == QR_BOTH)){
+                ofSetRectMode(OF_RECTMODE_CENTER);
+                ofRect(ofGetWindowWidth()-(QRCurrentSize/2)-QRCurrentMargin, 0, QRCurrentSize + 10, QRCurrentSize + 10);
+                ofSetRectMode(OF_RECTMODE_CORNER);
+                QRControlCode.draw(ofGetWindowWidth()-(QRCurrentSize/2)-QRCurrentMargin,0);
+            }
 		ofPopMatrix();
 	}
 }
